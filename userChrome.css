@@ -1,0 +1,278 @@
+/* Zen Nord — copy this file and nord.css into your profile's chrome folder. */
+@import url("nord.css");
+
+:root {
+  color-scheme: dark !important;
+
+  /* Override Zen's generated colors with the actual Nord palette. */
+  --zen-primary-color: var(--nord8) !important;
+  --zen-branding-dark: var(--nord0) !important;
+  --zen-branding-paper: var(--nord6) !important;
+  --zen-branding-bg: var(--nord0) !important;
+  --zen-branding-bg-reverse: var(--nord6) !important;
+  --zen-main-browser-background: var(--nord0) !important;
+  --zen-main-browser-background-toolbar: var(--nord0) !important;
+  --zen-main-browser-background-old: var(--nord0) !important;
+  --zen-main-browser-background-toolbar-old: var(--nord0) !important;
+  --zen-navigator-toolbox-background: var(--nord0) !important;
+  --zen-themed-toolbar-bg-transparent: var(--nord0) !important;
+  --zen-grainy-background-opacity: 0 !important;
+  --zen-grainy-background-opacity-old: 0 !important;
+  --zen-colors-primary: var(--nord1) !important;
+  --zen-colors-secondary: var(--nord2) !important;
+  --zen-colors-tertiary: var(--nord0) !important;
+  --zen-colors-primary-foreground: var(--nord4) !important;
+  --zen-colors-hover-bg: var(--nord2) !important;
+  --zen-colors-border: var(--nord3) !important;
+  --zen-colors-border-contrast: var(--nord3) !important;
+  --zen-colors-input-bg: var(--nord1) !important;
+  --zen-input-border-color: var(--nord3) !important;
+  --zen-dialog-background: var(--nord1) !important;
+  --zen-in-content-dialog-background: var(--nord1) !important;
+  --zen-urlbar-background: var(--nord1) !important;
+  --zen-toolbar-element-bg: var(--nord1) !important;
+  --zen-toolbar-element-bg-hover: var(--nord2) !important;
+  --zen-sidebar-notification-bg: var(--nord1) !important;
+  --zen-sidebar-themed-icon-fill: var(--nord4) !important;
+  --zen-accent-button-background: var(--nord8) !important;
+
+  /* Firefox chrome tokens used by Zen's toolbars and tabs. */
+  --lwt-accent-color: var(--nord0) !important;
+  --lwt-text-color: var(--nord4) !important;
+  --lwt-toolbar-field-background-color: var(--nord1) !important;
+  --lwt-toolbar-field-color: var(--nord4) !important;
+  --toolbox-textcolor: var(--nord4) !important;
+  --toolbox-textcolor-inactive: var(--nord4) !important;
+  --toolbar-color-scheme: dark !important;
+  --toolbar-bgcolor: var(--nord0) !important;
+  --toolbar-background-color: var(--nord0) !important;
+  --toolbar-color: var(--nord4) !important;
+  --toolbar-text-color: var(--nord4) !important;
+  --toolbar-field-background-color: var(--nord1) !important;
+  --toolbar-field-color: var(--nord4) !important;
+  --toolbar-field-border-color: var(--nord3) !important;
+  --toolbar-field-focus-background-color: var(--nord1) !important;
+  --toolbar-field-focus-color: var(--nord6) !important;
+  --toolbar-field-focus-border-color: var(--nord8) !important;
+  --toolbarbutton-icon-fill: var(--nord4) !important;
+  --toolbarbutton-icon-fill-attention: var(--nord8) !important;
+  --toolbarbutton-hover-background: var(--nord1) !important;
+  --toolbarbutton-active-background: var(--nord2) !important;
+  --toolbarbutton-background-color-hover: var(--nord1) !important;
+  --toolbarbutton-background-color-active: var(--nord2) !important;
+  --tab-selected-bgcolor: var(--nord2) !important;
+  --tab-selected-textcolor: var(--nord6) !important;
+  --tab-background-color-selected: var(--nord2) !important;
+  --tab-text-color-selected: var(--nord6) !important;
+  --tab-background-color-hover: var(--nord1) !important;
+  --tab-loading-fill: var(--nord8) !important;
+  --tab-attention-icon-color: var(--nord8) !important;
+  --tab-attention-dot-color: var(--nord8) !important;
+  --attention-dot-color: var(--nord8) !important;
+  --urlbar-box-bgcolor: var(--nord1) !important;
+  --urlbar-box-hover-bgcolor: var(--nord2) !important;
+  --urlbar-box-active-bgcolor: var(--nord2) !important;
+  --urlbarView-highlight-background: var(--nord2) !important;
+  --urlbarView-highlight-color: var(--nord6) !important;
+  --urlbarView-url-color: var(--nord8) !important;
+  --urlbarView-secondary-text-color: var(--nord4) !important;
+
+  /* Menus, dialogs, inputs, and both generations of button tokens. */
+  --arrowpanel-background: var(--nord1) !important;
+  --arrowpanel-color: var(--nord4) !important;
+  --arrowpanel-border-color: var(--nord3) !important;
+  --arrowpanel-dimmed: var(--nord2) !important;
+  --panel-background: var(--nord1) !important;
+  --panel-color: var(--nord4) !important;
+  --panel-border-color: var(--nord3) !important;
+  --panel-separator-color: var(--nord3) !important;
+  --panel-item-hover-bgcolor: var(--nord2) !important;
+  --panel-item-active-bgcolor: var(--nord3) !important;
+  --input-background-color: var(--nord1) !important;
+  --input-color: var(--nord4) !important;
+  --input-border-color: var(--nord3) !important;
+  --input-border-color-focus: var(--nord8) !important;
+  --button-background-color: var(--nord2) !important;
+  --button-background-color-hover: var(--nord3) !important;
+  --button-background-color-active: var(--nord1) !important;
+  --button-text-color: var(--nord4) !important;
+  --button-background-color-primary: var(--nord8) !important;
+  --button-background-color-primary-hover: var(--nord7) !important;
+  --button-background-color-primary-active: var(--nord9) !important;
+  --button-primary-hover-bgcolor: var(--nord7) !important;
+  --button-primary-active-bgcolor: var(--nord9) !important;
+  --button-primary-color: var(--nord0) !important;
+  --button-text-color-primary: var(--nord0) !important;
+  --in-content-primary-button-background: var(--nord8) !important;
+  --in-content-primary-button-background-hover: var(--nord7) !important;
+  --in-content-primary-button-background-active: var(--nord9) !important;
+  --in-content-primary-button-text-color: var(--nord0) !important;
+  --in-content-button-background: var(--nord2) !important;
+  --in-content-button-background-hover: var(--nord3) !important;
+  --in-content-button-text-color: var(--nord4) !important;
+  --color-accent-primary: var(--nord8) !important;
+  --color-accent-primary-hover: var(--nord7) !important;
+  --color-accent-primary-active: var(--nord9) !important;
+  --focus-outline-color: var(--nord8) !important;
+  --link-color: var(--nord8) !important;
+  --link-color-hover: var(--nord7) !important;
+  --link-color-active: var(--nord9) !important;
+  --text-color-error: var(--nord11) !important;
+  --text-color-warning: var(--nord13) !important;
+  --text-color-success: var(--nord14) !important;
+  --background-color-critical: var(--nord11) !important;
+  --background-color-warning: var(--nord13) !important;
+  --background-color-success: var(--nord14) !important;
+}
+
+/* Root values can be shadowed by local theme rules and workspace styles. */
+#main-window,
+#navigator-toolbox,
+#zen-main-app-wrapper {
+  --zen-main-browser-background: var(--nord0) !important;
+  --zen-main-browser-background-toolbar: var(--nord0) !important;
+  --toolbox-textcolor: var(--nord4) !important;
+  --toolbar-color: var(--nord4) !important;
+  color: var(--nord4) !important;
+}
+
+/* Workspace colors are assigned locally to these paint layers. Inherited
+   root variables cannot override them, including during workspace switches. */
+.zen-browser-generic-background {
+  --zen-main-browser-background: var(--nord0) !important;
+  --zen-main-browser-background-toolbar: var(--nord0) !important;
+  --zen-main-browser-background-old: var(--nord0) !important;
+  --zen-main-browser-background-toolbar-old: var(--nord0) !important;
+  background: var(--nord0) !important;
+}
+
+.zen-browser-generic-background::before,
+.zen-browser-generic-background::after {
+  background: var(--nord0) !important;
+}
+
+.zen-browser-generic-background .zen-browser-grain {
+  display: none !important;
+}
+
+/* Cover the sidebar itself as well as the shared workspace backdrop. */
+#navigator-toolbox {
+  --zen-navigator-toolbox-background: var(--nord0) !important;
+  background: var(--nord0) !important;
+}
+
+/* Paint the frame above the toolbar/sidebar so they cannot cover its corners.
+   Avoid clipping the app wrapper: Zen relies on its visible overflow. */
+:root[sizemode="normal"]:not([inDOMFullscreen="true"]) #zen-main-app-wrapper::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  border: 1px solid var(--nord8) !important;
+  border-radius: inherit;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+:root #zen-main-app-wrapper {
+  border-radius: 0 !important;
+}
+
+:root[sizemode="normal"]:not([inDOMFullscreen="true"]) #zen-main-app-wrapper {
+  border-radius: 8px !important;
+}
+
+.tabbrowser-tab {
+  --tab-background-color-selected: var(--nord2) !important;
+  --tab-text-color-selected: var(--nord6) !important;
+}
+
+.tabbrowser-tab:not([visuallyselected], [multiselected="true"]):hover .tab-background {
+  background: var(--nord1) !important;
+}
+
+.tabbrowser-tab:is([visuallyselected], [multiselected="true"]) .tab-background {
+  background: var(--nord2) !important;
+  /* An inset accent also identifies the active tab in a collapsed sidebar. */
+  box-shadow: inset 2px 0 var(--nord8) !important;
+}
+
+.tabbrowser-tab[visuallyselected] .tab-label {
+  color: var(--nord6) !important;
+}
+
+/* Essentials use Polar Night tiles and Frost frames, never favicon colors. */
+.tabbrowser-tab[zen-essential="true"] .tab-background {
+  background: var(--nord0) !important;
+  border: 1px solid var(--nord10) !important;
+  box-shadow: none !important;
+}
+
+.tabbrowser-tab[zen-essential="true"]:hover .tab-background {
+  background: var(--nord1) !important;
+  border-color: var(--nord9) !important;
+}
+
+.tabbrowser-tab[zen-essential="true"]:is([visuallyselected], [multiselected="true"]) .tab-background {
+  background: var(--nord2) !important;
+  border-color: var(--nord8) !important;
+  /* Reinforce the lighter fill with a bright frame, without changing size. */
+  box-shadow: inset 0 0 0 1px var(--nord8) !important;
+}
+
+/* Zen paints the blurred favicon and inner fill on these pseudo-elements. */
+.tabbrowser-tab[zen-essential="true"] .tab-background::before,
+.tabbrowser-tab[zen-essential="true"] .tab-background::after {
+  content: none !important;
+}
+
+#urlbar-background,
+#searchbar {
+  background: var(--nord1) !important;
+  border-color: var(--nord3) !important;
+}
+
+#urlbar[focused] > #urlbar-background {
+  outline: 2px solid var(--nord8) !important;
+  outline-offset: -2px;
+}
+
+#urlbar-input,
+#searchbar input {
+  color: var(--nord6) !important;
+  caret-color: var(--nord4) !important;
+}
+
+#urlbar-input::selection,
+#searchbar input::selection {
+  background: var(--nord2) !important;
+  color: var(--nord6) !important;
+}
+
+panel,
+menupopup {
+  --panel-background: var(--nord1) !important;
+  --panel-color: var(--nord4) !important;
+  --panel-border-color: var(--nord3) !important;
+}
+
+menupopup {
+  --menu-background-color: var(--nord1) !important;
+  --menu-color: var(--nord4) !important;
+  --menu-border-color: var(--nord3) !important;
+  --menuitem-hover-background-color: var(--nord2) !important;
+  --menuitem-hover-color: var(--nord6) !important;
+}
+
+/* Keep private browsing visibly distinct without changing container colors. */
+.private-browsing-indicator,
+.private-browsing-indicator-with-label {
+  color: var(--nord15) !important;
+}
+
+#statuspanel-label,
+tooltip {
+  background: var(--nord1) !important;
+  color: var(--nord4) !important;
+  border-color: var(--nord3) !important;
+}

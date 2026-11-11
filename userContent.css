@@ -1,0 +1,93 @@
+/* Optional: Nord for browser-owned pages only. */
+@import url("nord.css");
+
+@-moz-document url("about:home"), url("about:newtab"), url("about:blank"),
+  url-prefix("about:preferences"), url-prefix("about:addons"),
+  url-prefix("about:downloads"), url-prefix("about:config") {
+  :root {
+    color-scheme: dark !important;
+    --in-content-page-background: var(--nord0) !important;
+    --in-content-page-color: var(--nord4) !important;
+    --in-content-box-background: var(--nord1) !important;
+    --in-content-box-background-odd: var(--nord1) !important;
+    --in-content-box-info-background: var(--nord1) !important;
+    --in-content-box-border-color: var(--nord3) !important;
+    --in-content-border-color: var(--nord3) !important;
+    --in-content-border-hover: var(--nord9) !important;
+    --in-content-border-invalid: var(--nord11) !important;
+    --in-content-table-background: var(--nord0) !important;
+    --in-content-table-header-background: var(--nord1) !important;
+    --in-content-text-color: var(--nord4) !important;
+    --in-content-deemphasized-text: var(--nord4) !important;
+    --in-content-link-color: var(--nord8) !important;
+    --in-content-link-color-hover: var(--nord7) !important;
+    --in-content-link-color-active: var(--nord9) !important;
+    --in-content-link-color-visited: var(--nord15) !important;
+    --in-content-primary-button-background: var(--nord8) !important;
+    --in-content-primary-button-background-hover: var(--nord7) !important;
+    --in-content-primary-button-background-active: var(--nord9) !important;
+    --in-content-primary-button-text-color: var(--nord0) !important;
+    --in-content-button-background: var(--nord2) !important;
+    --in-content-button-background-hover: var(--nord3) !important;
+    --in-content-button-text-color: var(--nord4) !important;
+    --in-content-accent-color: var(--nord8) !important;
+    --in-content-accent-color-active: var(--nord9) !important;
+    --in-content-focus-outline-color: var(--nord8) !important;
+    --in-content-item-selected: var(--nord2) !important;
+    --in-content-item-selected-text: var(--nord6) !important;
+    --background-color-canvas: var(--nord0) !important;
+    --background-color-box: var(--nord1) !important;
+    --background-color-privacy: var(--nord15) !important;
+    --text-color: var(--nord4) !important;
+    --text-color-deemphasized: var(--nord4) !important;
+    --text-color-error: var(--nord11) !important;
+    --border-color: var(--nord3) !important;
+    --border-color-interactive: var(--nord3) !important;
+    --color-accent-primary: var(--nord8) !important;
+    --color-accent-primary-hover: var(--nord7) !important;
+    --color-accent-primary-active: var(--nord9) !important;
+    --button-background-color: var(--nord2) !important;
+    --button-background-color-hover: var(--nord3) !important;
+    --button-background-color-active: var(--nord1) !important;
+    --button-text-color: var(--nord4) !important;
+    --button-background-color-primary: var(--nord8) !important;
+    --button-background-color-primary-hover: var(--nord7) !important;
+    --button-background-color-primary-active: var(--nord9) !important;
+    --button-text-color-primary: var(--nord0) !important;
+    --link-color: var(--nord8) !important;
+    --link-color-hover: var(--nord7) !important;
+    --link-color-active: var(--nord9) !important;
+    --link-color-visited: var(--nord15) !important;
+    --focus-outline-color: var(--nord8) !important;
+    --newtab-background-color: var(--nord0) !important;
+    --newtab-background-color-secondary: var(--nord1) !important;
+    --newtab-text-primary-color: var(--nord4) !important;
+    --newtab-text-secondary-color: var(--nord4) !important;
+    --newtab-primary-action-background: var(--nord8) !important;
+    --newtab-primary-action-text-color: var(--nord0) !important;
+    --newtab-element-hover-color: var(--nord2) !important;
+    --newtab-element-active-color: var(--nord3) !important;
+    --newtab-border-color: var(--nord3) !important;
+    --newtab-link-primary-color: var(--nord8) !important;
+    --newtab-link-secondary-color: var(--nord9) !important;
+    --newtab-card-background-color: var(--nord1) !important;
+    --newtab-card-hairline-color: var(--nord3) !important;
+    --newtab-contextmenu-background-color: var(--nord1) !important;
+    --newtab-contextmenu-button-color: var(--nord4) !important;
+    --newtab-modal-color: var(--nord1) !important;
+    --newtab-overlay-color: var(--nord0) !important;
+    background-color: var(--nord0) !important;
+    color: var(--nord4) !important;
+    accent-color: var(--nord8);
+  }
+
+  body {
+    background-color: var(--nord0) !important;
+    color: var(--nord4) !important;
+  }
+
+  ::selection {
+    background: var(--nord2) !important;
+    color: var(--nord6) !important;
+  }
+}
